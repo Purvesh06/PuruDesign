@@ -1,0 +1,426 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Baloo 2', cursive;
+}
+
+/* OverLay Section */
+#overlay{
+    height: 100vh;
+    width: 100%;
+    background-color: #000000c2;
+    position: fixed;
+    z-index: 5;
+    transform: translateY(-20px);
+    display: none;
+}
+
+#overlay #box{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+#overlay #box #container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#overlay .fa{
+    color: white;
+    font-size: 3rem;
+    margin: 20px;
+    cursor: pointer;
+}
+
+#overlay #container ul li{
+    list-style-type: none;
+    color: white;
+    text-align: center;
+    font-size: 2.2rem;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+#overlay #container ul li:hover{
+    color: #ebebeb;
+}
+
+/* Home Section */
+.header-section{
+    height: 15vh;
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+}
+.main-header{
+    font-family: 'Nova Cut', cursive;
+    height: 80%;
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.sub-parent-header{
+    position: absolute;
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 20px;
+}
+.sub-header{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Home Section */
+.home-section{
+    height: 70vh;
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.home-section .home-div{
+    height: 80%;
+    width: 90%;
+    position: relative;
+}
+.home-section .home-div::before{
+    content: "";
+    height: 90%;
+    width: 100%;
+    position: absolute;
+    background: url(images/image4.jpg) no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation List */
+.home-section .home-div .navigation-list ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.home-section .home-div .navigation-list ul li{
+    text-transform: uppercase;
+    margin: 10px;
+    padding: 10px;
+    
+}
+.home-section .home-div .navigation-list ul li:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+/* Start Button  */
+.home-section .home-div .button-div{
+    display: flex;
+    justify-content: center;
+}
+.home-section .home-div .button-div .start-button{
+    padding: 10px 27px;
+    margin: 10px;
+    background: rgb(167, 167, 1);
+    color: white;
+    border: 0px;
+    width: 250px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.home-section .home-div .button-div .start-button:hover{
+    background: rgba(192, 192, 11, 0.7);
+    cursor: pointer;
+}
+
+/* Paragraph 1 */
+.para-1{
+    height: 450px;
+    width: 500px;
+    margin-left: 5%;
+}
+.para-1 p{
+    display: block;
+    margin-left: 50px;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.507);
+    line-height: 30px;
+}
+.para-1 .btn{
+    width: auto;
+    background: transparent;
+    border: 2px solid rgb(104, 104, 192);
+    margin: 20px;
+    margin-left: 50px;
+    padding: 20px 30px;
+    font-size: 1.2rem;
+    color: rgb(104, 104, 192);
+    transition: 0.5s;
+}
+.para-1 .btn:hover{
+    background-color: rgb(104, 104, 192);
+    color: white;
+}
+
+
+
+/* Collection */
+.collection-section{
+    display: flex;
+    justify-content: center;
+}
+
+.collection-section .collection-div{
+    height: 70vh;
+    width: 90%;
+    box-sizing: border-box;
+}
+.collection-section .collection-div::before{
+    overflow: hidden;
+    height: 80vh;
+    width: 90%;
+    content: "";
+    background: url(images/image2.jpg) no-repeat center center/cover;
+    position: absolute;
+    z-index: -1;
+    filter: blur(2px) opacity(0.7);
+}
+.collection-section .collection-div .parent-collection-div1{
+    height: 70vh;
+    width: 90%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.collection-section .collection-div .parent-collection-div1 .child-collection-div1{
+    color: rgb(0, 0, 0);
+    font-family: 'Open Sans Condensed', sans-serif;    
+    font-size: 2rem;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+
+.collection-section .collection-div .parent-collection-div2{
+    height: 85vh;
+    width: 90%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+}
+.collection-section .collection-div .parent-collection-div2 .child-collection-div2 button{
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    background: transparent;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    margin: 20px auto;
+    font-weight: 900;
+    transition: 0.4s;
+}
+.collection-section .collection-div .parent-collection-div2 .child-collection-div2 button:hover{
+    color: #000000;
+    border: 0px;
+    background: rgba(255, 255, 255, 0.479);
+}
+
+
+/* Paragraph 2 */
+
+.para-2{
+    height: 450px;
+    width: 500px;
+    margin-top: 200px;
+    margin-right: 5%;
+    float: right;
+}
+.para-2 p{
+    display: block;
+    margin-right: 50px;
+    font-size: 20px;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.507);
+    line-height: 30px;
+    text-align: right;
+}
+.para-2 .btn{
+    width: auto;
+    background: transparent;
+    border: 2px solid rgb(104, 104, 192);
+    margin: 20px;
+    margin-right: 50px;
+    padding: 20px 30px;
+    font-size: 1.2rem;
+    color: rgb(104, 104, 192);
+    transition: 0.5s;
+}
+.para-2 .btn:hover{
+    background-color: rgb(104, 104, 192);
+    color: white;
+}
+
+
+
+/*Start Your Project Section*/
+.start-section{
+    height: 90vh;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.start-section .start-div{
+    height: 90vh;
+    width: 90%;
+    box-sizing: border-box;
+}
+.start-section .start-div::before{
+    overflow: hidden;
+    height: 90vh;
+    width: 90%;
+    content: "";
+    background: url(images/image1.jpg) no-repeat center center;
+    position: absolute;
+    z-index: -1;
+    filter: blur(0px) opacity(0.9);
+}
+.start-section .start-div .parent-start-div1{
+    height: 90vh;
+    width: 90%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.start-section .start-div .parent-start-div1 .child-start-div1{
+    color: rgb(255, 253, 253);
+    font-family: 'Open Sans Condensed', sans-serif;    
+    font-size: 1.5rem;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    text-align: center;
+}
+
+
+.start-section .start-div .parent-start-div2{
+    height: 105vh;
+    width: 90%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+}
+.start-section .start-div .parent-start-div2 .child-start-div2 button{
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    background: transparent;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    font-weight: 900;
+    transition: 0.4s;
+}
+.start-section .start-div .parent-start-div2 .child-start-div2 button:hover{
+    color: #000000;
+    border: 0px;
+    background: rgb(255, 255, 255);
+}
+
+
+
+
+/* Footer Section */
+.footer-section{
+    width: 100%;
+    height: 50vh;
+    box-sizing: border-box;
+    margin-top: 100px;
+}
+.footer-section::before{
+    content: "";
+    height: 50vh;
+    width: 100%;
+    background: url(images/image2.jpg) no-repeat center center/cover;
+    position: absolute;
+    filter: opacity(0.7) blur(1px);
+    z-index: -1;
+}
+.footer-section .footer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.footer-section .footer .end{
+    width: 23%;
+    height: 300px;
+} 
+.footer-section .footer .end h1{
+    font-size: 1.9rem;
+}
+.footer-section .footer .div1{
+    padding-top: 20px;
+    padding-left: 20px;
+    height: 150px;
+    width: 250px;
+}
+
+.footer-section .footer .div1 .fa{
+    font-size: 7rem;
+}
+
+.footer-section .footer .div2{
+    padding-top: 20px;
+    padding-left: 20px;
+    height: 150px;
+    width: 250px;
+}
+.footer-section .footer .div3{
+    padding-top: 20px;
+    padding-left: 20px;
+    height: 150px;
+    width: 250px;
+}
+.footer-section .footer .div4{
+    padding-top: 20px;
+    padding-left: 20px;
+    height: 150px;
+    width: 250px;
+}
+.footer-section .footer .fa-div {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2rem;
+}
+.footer-section .footer .fa-div p i{
+    color: black;
+    transition: 0.1s;
+}
+.footer-section .footer .fa-div p i:hover{
+    opacity: 0.6;
+}
+
+
+/* bars */
+#bars{
+    display: none;
+    position: relative;
+    font-size: 2rem;
+    margin: 10px 20px;
+    cursor: pointer;
+}

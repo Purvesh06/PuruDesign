@@ -1,0 +1,100 @@
+
+
+
+@media only screen and (max-width: 910px){
+
+    /* Changing font size of Main Header */
+    .main-header{
+        font-size: 4rem;
+    }
+    /* Changing size of Start Your Project button */
+    .start-section .start-div .parent-start-div2 .child-start-div2 button{
+        transform: translateY(40px);
+    }
+}
+
+@media only screen and (max-width: 749px){
+    /* Changing font size of Main Header */
+    .main-header{
+        font-size: 3rem;
+    }
+    .collection-section .collection-div .parent-collection-div1 .child-collection-div1 h1{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 664px){
+    .home-section .home-div .navigation-list ul li{
+        display: none;
+    }
+    #bars{
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 566px){
+    /* Main header changing font size */
+    .main-header{
+        font-size: 2.6rem;
+    }
+    /* Sub header changing font size  */
+    .sub-header{
+        transform: translateY(-40px);
+    }
+
+    /* para 1 changing width */
+    .para-1{
+        width: 270px;
+    }
+    /* para 1 paragraph font size changing */
+    .para-1 p{
+        font-size: 19px;
+        line-height: 25px;
+        margin-left: 5%;
+    }
+    /* Button in paragraph 1  */
+    .para-1 .btn{
+        height: 40px;
+        font-size: 0.8rem;
+        padding: 2px 30px;
+    }
+
+    /* Collection Section Heading 1 */
+    .collection-section .collection-div .parent-collection-div1 .child-collection-div1 h1{
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+    /* para 2 changing width */
+    .para-2{
+        width: 250px;
+    }
+    /* para 1 paragraph font size changing */
+    .para-2 p{
+        font-size: 19px;
+        line-height: 25px;
+        margin-right: 5%;
+    }
+    /*Button in paragraph 1  */
+    .para-2 .btn{
+        height: 40px;
+        font-size: 0.8rem;
+        padding: 2px 30px;
+    }
+
+    /* Start Section Heading 1 */
+    .start-section .start-div .parent-start-div1 .child-start-div1{
+        font-size: 1.2rem;
+        transform: translateY(-30px);
+    }
+    /* Start Section Button */
+    .start-section .start-div .parent-start-div2 .child-start-div2 button{
+        padding: 12px 10px;
+        border-radius: 3px;
+    }
+
+    /* Increasing Height of Footer Section */
+    .footer-section::before{
+        height: 120vh;
+    }
+}   
+
